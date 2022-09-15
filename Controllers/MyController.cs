@@ -22,5 +22,10 @@ namespace Exercise9.Controllers;
         public string PostData(Student objectStudent){
             return "Hello "+objectStudent.Fname+" "+objectStudent.Lname;
         }
+        [HttpPut("{id}")]
+        public string PutData(int id,Student objectStuden){
+            return "Student: "+id+ "new Fname="+objectStuden.Fname+
+            " new Lname="+objectStuden.Lname;
+        }
         
     }
