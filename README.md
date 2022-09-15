@@ -2,4 +2,4 @@
 
 ## Example about WebApi with .NET 6.0
 
-test
+GItginore in wrong place
