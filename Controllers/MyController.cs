@@ -9,5 +9,13 @@ namespace Exercise9.Controllers;
         public string GetFirst(){
             return "I am the first test";
         }
+        [HttpGet("second")]
+        public string GetSecond(){
+            return "I am the second test";
+        }
+        [HttpGet("third/{fname}")]
+        public string GetThird(string fname){
+            return "Hello "+fname;
+        }
         
     }
