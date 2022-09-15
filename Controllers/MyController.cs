@@ -11,11 +11,16 @@ namespace Exercise9.Controllers;
         }
         [HttpGet("second")]
         public string GetSecond(){
-            return "I am the second test";
+            return "I am the second get method";
         }
         [HttpGet("third/{fname}")]
         public string GetThird(string fname){
             return "Hello "+fname;
+        }
+
+        [HttpPost]
+        public string PostData(Student objectStudent){
+            return "Hello "+objectStudent.Fname+" "+objectStudent.Lname;
         }
         
     }
